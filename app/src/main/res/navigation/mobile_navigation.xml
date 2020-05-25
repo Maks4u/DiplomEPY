@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.diplomepy.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_HomeFragment_to_HomeSecondFragment"
+            app:destination="@id/nav_home_second" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_home_second"
+        android:name="com.example.diplomepy.ui.home.HomeSecondFragment"
+        android:label="@string/home_second"
+        tools:layout="@layout/fragment_home_second">
+        <action
+            android:id="@+id/action_HomeSecondFragment_to_HomeFragment"
+            app:destination="@id/nav_home" />
+
+        <argument
+            android:name="myArg"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_test"
+        android:name="com.example.diplomepy.ui.tests.themes.TestsFragment"
+        android:label="@string/menu_course"
+        tools:layout="@layout/fragment_test" >
+        <action
+            android:id="@+id/action_nav_test_to_nav_test_part2"
+            app:destination="@id/nav_test_part2" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_glossary"
+        android:name="com.example.diplomepy.ui.glossary.GlossaryFragment"
+        android:label="@string/menu_glossary"
+        tools:layout="@layout/fragment_glossary" >
+        <action
+            android:id="@+id/action_nav_glossary_to_addEditDictFragment"
+            app:destination="@id/addEditDictFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="com.example.diplomepy.ui.about.AboutFragment"
+        android:label="@string/menu_about"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/nav_sites"
+        android:name="com.example.diplomepy.ui.sites.SitesFragment"
+        android:label="@string/menu_useful"
+        tools:layout="@layout/fragment_sites" />
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.example.diplomepy.Settings"
+        android:label="@string/menu_settings"
+        tools:xml="@xml/settings"/>
+    <fragment
+        android:id="@+id/nav_test_part2"
+        android:name="com.example.diplomepy.ui.tests.contentThemes.TestsFragmentPart2"
+        android:label="@string/menu_course"
+        tools:layout="@layout/fragment_test_part2" >
+        <action
+            android:id="@+id/action_nav_test_part2_to_nav_lesson"
+            app:destination="@id/nav_lesson" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_lesson"
+        android:name="com.example.diplomepy.ui.lesson.LessonsFragment"
+        android:label="@string/menu_course"
+        tools:layout="@layout/fragment_lesson" >
+        <action
+            android:id="@+id/action_nav_lesson_to_nav_question"
+            app:destination="@id/nav_question" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_question"
+        android:name="com.example.diplomepy.ui.question.QuestionFragment"
+        android:label="@string/test"
+        tools:layout="@layout/fragment_question" />
+    <fragment
+        android:id="@+id/addEditDictFragment"
+        android:name="com.example.diplomepy.ui.glossary.addEditDictionary.AddEditDictFragment"
+        android:label="Додавання/зміна терміну"
+        tools:layout="@layout/activity_add_dict" />
+
+</navigation>

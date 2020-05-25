@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">EPY</string>
+    <string name="navigation_drawer_open">Відкрити вкладку навігації</string>
+    <string name="navigation_drawer_close">Закрити вкладку навігації</string>
+    <string name="nav_header_title">"Easy for you, pleasure - for us"</string>
+    <string name="nav_header_desc">Меню навігації</string>
+    <string name="action_settings">Налаштування</string>
+
+    <string name="menu_home">Головна</string>
+    <string name="menu_glossary">Словник</string>
+    <string name="menu_course">Курс</string>
+    <string name="menu_settings">Налаштування</string>
+    <string name="menu_test">Пісочниця</string>
+    <string name="menu_useful">Корисні статті</string>
+    <string name="menu_useful_1">Phyton wiki</string>
+    <string name="menu_about">Про нас</string>
+
+    <string name="home_second">Меню</string>
+    <string name="web_1">Інформація про Phyton в Wikipedia</string>
+    <string name="web_2">Phyton 3 - інформація про всі елементи Phyton на російській мові</string>
+    <string name="web_3">Документація Phyton англійською, найбільша онлайн бібліотека</string>
+    <string name="web_4">Phyton 3 для початківців</string>
+    <string name="web_5">Посилання на скачування файлу з офіційного джерела</string>
+    <string name="web_6">Stack Overflow - сайт з великою кількістю вирішених помилок в Phyton</string>
+    <string name="web_7">Сайт КНТЕУ\n(раптом хтось захоче вступити до вузу)</string>
+    <string name="web_button">Перейти за посиланням</string>
+
+    <string name="set_t1">Налаштування тексту</string>
+    <string name="set_t2">Налаштування тем</string>
+    <string name="set_t3">Налаштування прогресу</string>
+    <string name="set_text">Розмір тексту</string>
+    <string name="set_theme">Зміна теми</string>
+    <string name="set_drop_set">Скинути налаштування</string>
+    <string name="set_drop_prog">Скинути прогрес</string>
+    <string name="set_dr">Скинути</string>
+    <string name="back">Повернутися назад</string>
+    <string name="question">Перейти до тесту</string>
+    <string name="text_helper">Що шукаємо?</string>
+    <string name="test">Тест</string>
+    <string name="menu_help">Додатки</string>
+
+
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!--text size-->
+    <string name="text_small">SMALL</string>
+    <string name="text_medium">MEDIUM</string>
+    <string name="text_big">BIG</string>
+
+    <string-array name="preferences_text_size" tools:ignore="InconsistentArrays">
+        <item>Малий</item>
+        <item>Середній</item>
+        <item>Великий</item>
+    </string-array>
+
+    <string-array name="preferences_text_entries" tools:ignore="InconsistentArrays">
+        <item>@string/text_small</item>
+        <item>@string/text_medium</item>
+        <item>@string/text_big</item>
+    </string-array>
+
+    <string name="preferences_text_default">@string/text_medium</string>
+    <string name="preferences_text">Вибрати розмір тексту</string>
+    <string name="preferences_text_summary">Розмір тексту</string>
+    <string name="preferences_text_key">text</string>
+
+    <!--theme-->
+    <string name="theme_light">LIGHT</string>
+    <string name="theme_dark">DARK</string>
+    <string name="theme_system">SYSTEM</string>
+
+    <string-array name="preferences_themes_list" tools:ignore="InconsistentArrays">
+        <item>Світла</item>
+        <item>Темна</item>
+        <item>Системна</item>
+    </string-array>
+
+    <string-array name="preferences_themes_entries" tools:ignore="InconsistentArrays">
+        <item>@string/theme_light</item>
+        <item>@string/theme_dark</item>
+        <item>@string/theme_system</item>
+    </string-array>
+
+    <string name="preferences_theme_default">@string/theme_light</string>
+    <string name="preferences_theme">Вибрати тему</string>
+    <string name="preferences_theme_summary">Офорлмення зовнішнього вигляду</string>
+    <string name="preferences_theme_key">themes</string>
+
+</resources>

@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.sites.SitesFragment">
+
+    <ScrollView
+        android:id="@+id/scrollView5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/toppic"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/web_inf1"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:id="@+id/web_inf1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:gravity="center"
+                android:text="@string/web_1"
+                app:layout_constraintBottom_toTopOf="@+id/frame1"
+                app:layout_constraintTop_toBottomOf="@+id/imageView8"
+                tools:layout_editor_absoluteX="16dp" />
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/frame1"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="4dp"
+                app:layout_constraintBottom_toTopOf="@+id/web_inf2"
+                app:layout_constraintTop_toBottomOf="@+id/web_inf1">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/button2_back"
+                    android:gravity="center_vertical|right"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="45dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/web_button"
+                        android:textColor="#252525" />
+
+                    <ImageView
+                        android:layout_width="33dp"
+                        android:layout_height="33dp"
+                        android:layout_marginRight="16dp"
+                        app:srcCompat="?attr/actionModeShareDrawable" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/web_inf2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:gravity="center"
+                android:text="@string/web_2"
+                app:layout_constraintBottom_toTopOf="@+id/frame2"
+                app:layout_constraintTop_toBottomOf="@+id/frame1"
+                tools:layout_editor_absoluteX="16dp" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/frame2"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="4dp"
+                app:layout_constraintBottom_toTopOf="@+id/web_inf3"
+                app:layout_constraintTop_toBottomOf="@+id/web_inf2">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/button2_back"
+                    android:gravity="center_vertical|right"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="45dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/web_button"
+                        android:textColor="#252525" />
+
+                    <ImageView
+                        android:layout_width="33dp"
+                        android:layout_height="33dp"
+                        android:layout_marginRight="16dp"
+                        app:srcCompat="?attr/actionModeShareDrawable" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/web_inf3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:text="@string/web_3"
+                app:layout_constraintBottom_toTopOf="@+id/frame3"
+                app:layout_constraintTop_toBottomOf="@+id/frame2"
+                tools:layout_editor_absoluteX="25dp" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/frame3"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="4dp"
+                app:layout_constraintBottom_toTopOf="@+id/web_inf4"
+                app:layout_constraintTop_toBottomOf="@+id/web_inf3">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/button2_back"
+                    android:gravity="center_vertical|right"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="45dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/web_button"
+                        android:textColor="#252525" />
+
+                    <ImageView
+                        android:layout_width="33dp"
+                        android:layout_height="33dp"
+                        android:layout_marginRight="16dp"
+                        app:srcCompat="?attr/actionModeShareDrawable" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/web_inf4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:gravity="center"
+                android:text="@string/web_4"
+                app:layout_constraintBottom_toTopOf="@+id/frame4"
+                app:layout_constraintTop_toBottomOf="@+id/frame3"
+                tools:layout_editor_absoluteX="16dp" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/frame4"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="4dp"
+                app:layout_constraintBottom_toTopOf="@+id/web_inf5"
+                app:layout_constraintTop_toBottomOf="@+id/web_inf4">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/button2_back"
+                    android:gravity="center_vertical|right"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="45dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/web_button"
+                        android:textColor="#252525" />
+
+                    <ImageView
+                        android:layout_width="33dp"
+                        android:layout_height="33dp"
+                        android:layout_marginRight="16dp"
+                        app:srcCompat="?attr/actionModeShareDrawable" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/web_inf5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:gravity="center"
+                android:text="@string/web_5"
+                app:layout_constraintBottom_toTopOf="@+id/frame5"
+                app:layout_constraintTop_toBottomOf="@+id/frame4"
+                tools:layout_editor_absoluteX="16dp" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/frame5"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="4dp"
+                app:layout_constraintBottom_toTopOf="@+id/web_inf6"
+                app:layout_constraintTop_toBottomOf="@+id/web_inf5">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/button2_back"
+                    android:gravity="center_vertical|right"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="45dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/web_button"
+                        android:textColor="#252525" />
+
+                    <ImageView
+                        android:layout_width="33dp"
+                        android:layout_height="33dp"
+                        android:layout_marginRight="16dp"
+                        app:srcCompat="?attr/actionModeShareDrawable" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/web_inf6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:gravity="center"
+                android:text="@string/web_6"
+                app:layout_constraintBottom_toTopOf="@+id/frame6"
+                app:layout_constraintTop_toBottomOf="@+id/frame5"
+                tools:layout_editor_absoluteX="16dp" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/frame6"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="4dp"
+                app:layout_constraintBottom_toTopOf="@+id/web_inf7"
+                app:layout_constraintTop_toBottomOf="@+id/web_inf6">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/button2_back"
+                    android:gravity="center_vertical|right"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="45dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/web_button"
+                        android:textColor="#252525" />
+
+                    <ImageView
+                        android:layout_width="33dp"
+                        android:layout_height="33dp"
+                        android:layout_marginRight="16dp"
+                        app:srcCompat="?attr/actionModeShareDrawable" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/web_inf7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:gravity="center"
+                android:text="@string/web_7"
+                app:layout_constraintBottom_toTopOf="@+id/frame7"
+                app:layout_constraintTop_toBottomOf="@+id/frame6"
+                tools:layout_editor_absoluteX="16dp" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/frame7"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="4dp"
+                app:layout_constraintBottom_toTopOf="@+id/imageView9"
+                app:layout_constraintTop_toBottomOf="@+id/web_inf7">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/button2_back"
+                    android:gravity="center_vertical|right"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="45dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/web_button"
+                        android:textColor="#252525" />
+
+                    <ImageView
+                        android:layout_width="33dp"
+                        android:layout_height="33dp"
+                        android:layout_marginRight="16dp"
+                        app:srcCompat="?attr/actionModeShareDrawable" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/bottompic"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
